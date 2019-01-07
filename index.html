@@ -1,10 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>5xstudio</title>
+	<title>5XSTUDIO</title>
+	<link href="https://fonts.googleapis.com/css?family=Anaheim|Roboto+Slab" rel="stylesheet">
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="icon" href="16x16.png" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	Hello
+	<div class="header">
+		<ul>
+			<li class="menu underline-magical">ABOUT</li>
+			<li class="menu underline-magical">WHAT WE DO</li>
+		</ul>
+	</div>
 
+	<p class="text"> <span class="text__first"><span class="text__word">5XST </span><span class="text__first-bg"></span></span><br/><span class="text__second"><span class="text__word">UDIO</span><span class="text__second-bg"></span></span></p>
+
+	<div class="footer">&copy; 5XSTUDIO 2019</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+	<script>
+	// envelope animation
+	window.onload = function(){
+	  var tl = new TimelineLite({delay: 1}),
+	    firstBg = document.querySelectorAll('.text__first-bg'),
+	    secBg = document.querySelectorAll('.text__second-bg'),
+	    word  = document.querySelectorAll('.text__word');
+	  
+	  tl
+	    .to(firstBg, 0.2, {scaleX:1})
+	    .to(secBg, 0.2, {scaleX:1})
+	    .to(word, 0.1, {opacity:1}, "-=0.1")  
+	    .to(firstBg, 0.2, {scaleX:0})
+	    .to(secBg, 0.2, {scaleX:0});
+	  
+	  // document.querySelector('.restart').onclick = function() {tl.restart();};
+	};
+
+	
+
+</script>
 </body>
 </html>
