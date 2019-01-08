@@ -27,13 +27,13 @@
 			<a class="menu-link" href=""><li class="menu home-button">HOME</li></a>
 			<a class="menu-link" href=""><li class="menu underline-magical">ABOUT</li></a>
 			<a class="menu-link" href=""><li class="menu underline-magical">CONTACT</li></a>
-			<a class="menu-link" href=""><li class="menu ham-button">
-				<button class="hamburger" type="button">
+			<li class="menu ham-button">
+				<button class="hamburger hamburger--slider" type="button">
 				<span class="hamburger-box">
 				    <span class="hamburger-inner"></span>
 				</span>
 				</button>
-			</li></a>
+			</li>
 		</ul>
 	</div>
 	<!-- /end menu -->
@@ -58,28 +58,6 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
-	<script>
-	// envelope animation
-	window.onload = function(){
-		$(".preloader").fadeOut("slow");
-
-		var tl = new TimelineLite({delay: 1.5}),
-		    firstBg = document.querySelectorAll('.text__first-bg'),
-		    secBg = document.querySelectorAll('.text__second-bg'),
-		    word  = document.querySelectorAll('.text__word');
-		  
-		tl
-		    .to(firstBg, 0.2, {scaleX:1})
-		    .to(secBg, 0.2, {scaleX:1})
-		    .to(word, 0.1, {opacity:1}, "-=0.1")  
-		    .to(firstBg, 0.2, {scaleX:0})
-		    .to(secBg, 0.2, {scaleX:0});
-		  
-		// document.querySelector('.restart').onclick = function() {tl.restart();};
-	};
-
-	
-
-</script>
+	<script src="script.js"></script>	
 </body>
 </html>
