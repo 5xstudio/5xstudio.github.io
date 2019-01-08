@@ -51,7 +51,7 @@ body{
 }
 
 .text__second{
-  margin-left: 15vmin;
+  margin-left: 14vmin;
 }
 
 .header{
@@ -69,6 +69,11 @@ body{
 	font-family: "Roboto Slab";
 	margin: 20px 20px 0px 20px;
 	padding: 10px 10px 10px 10px;
+}
+
+.menu-link{
+	text-decoration: none;
+	color: #1a1a1a;
 }
 
 .menu-wrap{
