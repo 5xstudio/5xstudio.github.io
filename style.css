@@ -14,6 +14,21 @@ body{
   margin: 0 0 0 0;
 }
 
+@media screen and (max-width: 600px) {
+	.menu-wrap a:not(:last-child) {
+		display: none;
+	}
+	/*.menu-wrap a:not(:first-child){
+		display: none;
+	}*/
+	.ham-button{
+	  	float: right;
+	  	display: inline-block;
+	  	padding-left: 0;
+	  	margin-left: 0;
+	}
+}
+
 .text{
   display: inline-block;
   font-size: 18vmin;
@@ -65,11 +80,19 @@ body{
 	list-style: none;
 	display: inline-block;
 	align-self: center;
-	font-size: 25px;
+	font-size: 4vmin;
 	font-family: "Roboto Slab";
-	margin: 20px 20px 0px 20px;
+	margin: 10px 20px 0px 20px;
 	padding: 10px 10px 10px 10px;
 	color: #1a1a1a;
+}
+
+.home-button{
+	margin-right: 30vmin;
+}
+
+.ham-button{
+	margin-left: 30vmin;
 }
 
 .menu-link{
@@ -101,7 +124,7 @@ body{
 	background: #1a1a1a;
 	color: white;
 	width: 100%;
-	font-family: "Anaheim";
+	font-family: "Roboto Slab";
 	text-align: center;
 }
 
