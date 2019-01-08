@@ -15,17 +15,41 @@ body{
 }
 
 @media screen and (max-width: 600px) {
-	.menu-wrap a:not(:last-child) {
+	.menu-wrap a:not(:first-child):not(:last-child) {
 		display: none;
+	}
+
+	.menu-wrap{
+		padding: 0px;
+	}
+	.menu{
+		list-style: none;
+		display: inline-block;
+		align-self: center;
+		font-size: 6vmin;
+		font-family: "Roboto Slab";
+		margin: 10px 20px 0px 20px;
+		padding: 10px 10px 10px 10px;
+		color: #1a1a1a;
 	}
 	/*.menu-wrap a:not(:first-child){
 		display: none;
 	}*/
+	.home-button{
+		margin: 14px 0 0 50px;
+		display: inline;
+		padding: 0 0 0 0;
+		float: left;
+	}
 	.ham-button{
-	  	float: right;
+		margin: 0 40px 0 0;
+		display: inline;
+		padding: 0 0 0 0;
+		float: right;
+	  	/*float: right;
 	  	display: inline-block;
 	  	padding-left: 0;
-	  	margin-left: 0;
+	  	margin-left: 0;*/
 	}
 }
 
@@ -76,44 +100,47 @@ body{
 	align-self: start;
 	text-align: center;
 }
-.menu{
-	list-style: none;
-	display: inline-block;
-	align-self: center;
-	font-size: 4vmin;
-	font-family: "Roboto Slab";
-	margin: 10px 20px 0px 20px;
-	padding: 10px 10px 10px 10px;
-	color: #1a1a1a;
-}
 
-.home-button{
-	margin-right: 30vmin;
-}
+@media screen and (min-width: 600px) {
+	.menu{
+		list-style: none;
+		display: inline-block;
+		align-self: center;
+		font-size: 4vmin;
+		font-family: "Roboto Slab";
+		margin: 10px 20px 0px 20px;
+		padding: 10px 10px 10px 10px;
+		color: #1a1a1a;
+	}
 
-.ham-button{
-	margin-left: 30vmin;
-}
+	.home-button{
+		margin-right: 150px;
+	}
 
-.menu-link{
-	text-decoration: none;
-	color: #1a1a1a;
-}
+	.ham-button{
+		margin-left: 150px;
+	}
 
-.menu-wrap{
-	padding: 0px;
-	margin-top: 0px;
+	.menu-link{
+		text-decoration: none;
+		color: #1a1a1a;
+	}
+
+	.menu-wrap{
+		padding: 0px;
+		margin-top: 0px;
+	}
+	
 }
 
 /* underline */
-.underline-magical {
-	background-image: linear-gradient(120deg, #f3e9c6 0%, #f3e9c6 100%);
-	background-repeat: no-repeat;
-	background-size: 100% 0.2em;
-	background-position: 0% 100%;
-	transition: background-size 0.25s ease-in;
-}
-
+	.underline-magical {
+		background-image: linear-gradient(120deg, #f3e9c6 0%, #f3e9c6 100%);
+		background-repeat: no-repeat;
+		background-size: 100% 0.2em;
+		background-position: 0% 100%;
+		transition: background-size 0.25s ease-in;
+	}
 .footer{
 	align-items: end;
 	position: absolute;
